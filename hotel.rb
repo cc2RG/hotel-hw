@@ -38,9 +38,14 @@ def add_to_register(room_num, name)
   @guest_register[name] = room_num
 end
 
+def remove_from_register(name)
+  @guest_register.delete(name)
+end  
+
 
 def check_out(room_num, *name)
   room_look_up(room_num).remove_guests
+  remove_from_register(name)
 end
 
 def check_vaccancy(room_num)
