@@ -17,6 +17,12 @@ def add_guests(*name)
   @room[:guests] = name
 end
 
+def remove_guests
+  @room[:guests] = nil
+end
 
+def define_type(type)
+  @room[:type] = type
+end  
 
 end  

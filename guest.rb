@@ -1,6 +1,7 @@
 class Guest
-attr_reader :stay
-def initialize(stay)
+attr_reader :name, :stay
+def initialize(name, stay)
+ @name = name
  @stay = stay
 end
 
