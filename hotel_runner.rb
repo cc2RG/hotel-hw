@@ -7,21 +7,9 @@ require_relative 'guest'
 
 standard_hotel=Hotel.new("The Palms", 30)
 
-#Mr_Smith = Guest.new(6)
+standard_hotel.check_in(12,"Mr Man", 4)
 
-# def room_look_up(room_number)
-#   room_number = room_number + 1
-
-# end  
-
-def check_in(room_num,*guest)
-@rooms.room_look_up(room_num).add_guests(guest)
-
-end  
-
-
-
-
+puts "#{standard_hotel.room_look_up(12)[:guests][0][:name]}"
 
 
 
